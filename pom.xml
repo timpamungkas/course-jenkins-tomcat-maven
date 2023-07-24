@@ -11,7 +11,7 @@
 	<groupId>com.course</groupId>
 	<artifactId>tomcat</artifactId>
 	<version>1.0.0</version>
-	<name>tomcat</name>
+	<name>web-server</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
