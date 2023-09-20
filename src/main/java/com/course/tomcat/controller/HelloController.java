@@ -1,21 +1,21 @@
-paquete com.por supuesto.Tomcat.controlador;
+package com.course.tomcat.controller;
  
-Importar org.Springframework.web.enlazar.anotación.*;
+import org.springframework.web.bind.annotation.*;
  
-Importar Java.tiempo.LocalDateTime;
-Importar Java.util.concurrente.ThreadLocalRandom;
+import java.time.LocalDateTime;
+import java.util.concurrent.ThreadLocalRandom;
  
 @RestController
 @RequestMapping("/api")
-clase pública HelloController {
+public class HelloController {
  
-    @GetMapping(valor = {"", "/",   "/now"})
-    Hola de cadena () {
-        return  "Now is " + LocalDateTime.Ahora();
+    @GetMapping(value = {"", "/", "/now"})
+    String hello() {
+        return "Now is " + LocalDateTime.now();
     }
     
-    @GetMapping(valor =  "/random")
-    int aleatorio(){
-        return ThreadLocalRandom.current().siguienteInt(0,1000);
+    @GetMapping(value = "/random")
+    int random(){
+        return ThreadLocalRandom.current().nextInt(0,1000);
     }
 }
