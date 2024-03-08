@@ -19,3 +19,17 @@ public class HelloController {
         return ThreadLocalRandom.current().nextInt(0,1000);
     }
 }
+package com.course.tomcat;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class TomcatApplication extends SpringBootServletInitializer {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TomcatApplication.class, args);
+	}
+
+}
