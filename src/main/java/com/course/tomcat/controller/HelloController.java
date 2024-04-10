@@ -20,4 +20,11 @@ public class HelloController {
         return ThreadLocalRandom.current().nextInt(0,1000);
     }
 
+
+    @GetMapping("/hero")
+    String hero(){
+        return "My Favorite superhero is Deadpool";
+    }
+
+
 }
