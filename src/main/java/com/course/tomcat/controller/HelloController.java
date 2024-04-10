@@ -27,4 +27,9 @@ public class HelloController {
     }
 
 
+    @GetMapping
+    String messageInitial(){
+        return "Hello Jenkins and Google!";
+    }
+
 }
